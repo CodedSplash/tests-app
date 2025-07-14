@@ -27,7 +27,7 @@ export const ResultPage = () => {
 
   useEffect(() => {
     if (!testId) {
-      navigate('/tests-app', { viewTransition: true });
+      navigate('/tests-app/', { viewTransition: true });
       return;
     }
 
@@ -43,7 +43,7 @@ export const ResultPage = () => {
           duration: 3000,
           isClosable: true,
         });
-        navigate('/tests-app', { viewTransition: true });
+        navigate('/tests-app/', { viewTransition: true });
       }
     }
   }, [testId, currentTest, tests, selectTest, navigate, toast]);
@@ -73,7 +73,7 @@ export const ResultPage = () => {
           <Button
             leftIcon={<ArrowBackIcon />}
             variant="ghost"
-            onClick={() => navigate('/tests-app', { viewTransition: true })}
+            onClick={() => navigate('/tests-app/', { viewTransition: true })}
             mb={4}
           >
             Вернуться на главную

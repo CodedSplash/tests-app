@@ -29,7 +29,7 @@ export const Layout = () => {
       >
         <Container maxW="container.lg">
           <Flex justify="space-between" align="center">
-            <Link as={RouterLink} to="/tests-app" viewTransition={true} _hover={{ textDecoration: 'none' }}>
+            <Link as={RouterLink} to="/tests-app/" viewTransition={true} _hover={{ textDecoration: 'none' }}>
               <Heading size="md">Приложение для тестирования</Heading>
             </Link>
             <ThemeToggle />

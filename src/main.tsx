@@ -12,10 +12,10 @@ import { ResultPage } from './pages/ResultPage'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Navigate to={'/tests-app'} replace />
+    element: <Navigate to={'/tests-app/'} replace />
   },
   {
-    path: '/tests-app',
+    path: '/tests-app/',
     element: <Layout />,
     children: [
       {
