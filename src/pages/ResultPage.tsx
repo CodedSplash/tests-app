@@ -27,7 +27,7 @@ export const ResultPage = () => {
 
   useEffect(() => {
     if (!testId) {
-      navigate('/', { viewTransition: true });
+      navigate('/tests-app', { viewTransition: true });
       return;
     }
 
@@ -43,7 +43,7 @@ export const ResultPage = () => {
           duration: 3000,
           isClosable: true,
         });
-        navigate('/', { viewTransition: true });
+        navigate('/tests-app', { viewTransition: true });
       }
     }
   }, [testId, currentTest, tests, selectTest, navigate, toast]);
@@ -57,13 +57,13 @@ export const ResultPage = () => {
 
   useEffect(() => {
     if (!allQuestionsAnswered) {
-      navigate(`/test/${testId}`, { viewTransition: true });
+      navigate(`/tests-app/test/${testId}`, { viewTransition: true });
     }
   }, [testId, navigate])
 
   const handleRetakeTest = () => {
     reset();
-    navigate(`/test/${testId}`, { viewTransition: true });
+    navigate(`/tests-app/test/${testId}`, { viewTransition: true });
   };
 
   return (
@@ -73,7 +73,7 @@ export const ResultPage = () => {
           <Button
             leftIcon={<ArrowBackIcon />}
             variant="ghost"
-            onClick={() => navigate('/', { viewTransition: true })}
+            onClick={() => navigate('/tests-app', { viewTransition: true })}
             mb={4}
           >
             Вернуться на главную
