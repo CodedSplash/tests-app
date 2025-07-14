@@ -32,7 +32,7 @@ export const TestPage = () => {
 
   useEffect(() => {
     if (!testId) {
-      navigate('/tests-app/', { viewTransition: true });
+      navigate('/', { viewTransition: true });
       return;
     }
 
@@ -48,7 +48,7 @@ export const TestPage = () => {
           duration: 3000,
           isClosable: true,
         });
-        navigate('/tests-app/', { viewTransition: true });
+        navigate('/', { viewTransition: true });
       }
     }
   }, [testId, currentTest, tests, selectTest, navigate, toast]);
@@ -101,7 +101,7 @@ export const TestPage = () => {
 
   const handleFinishTest = () => {
     if (allQuestionsAnswered) {
-      navigate(`/tests-app/result/${currentTest.id}`, { viewTransition: true });
+      navigate(`/result/${currentTest.id}`, { viewTransition: true });
     } else {
       toast({
         title: 'Внимание',
@@ -120,7 +120,7 @@ export const TestPage = () => {
           <Button
             leftIcon={<ArrowBackIcon />}
             variant="ghost"
-            onClick={() => navigate('/tests-app/', { viewTransition: true })}
+            onClick={() => navigate('/', { viewTransition: true })}
             mb={4}
           >
             Вернуться на главную

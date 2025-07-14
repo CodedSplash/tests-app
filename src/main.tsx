@@ -15,12 +15,12 @@ createRoot(document.getElementById('root')!).render(
       <ColorModeScript initialColorMode={themeConfig.initialColorMode} />
       <Router>
         <Routes>
-          <Route path="/" element={<Navigate to="/tests-app/" replace />} />
-          <Route path="/tests-app/" element={<Layout />}>
+          <Route path="/" element={<Layout />}>
             <Route index element={<HomePage />} />
             <Route path="test/:testId" element={<TestPage />} />
             <Route path="result/:testId" element={<ResultPage />} />
           </Route>
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
     </ChakraProvider>

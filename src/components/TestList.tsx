@@ -26,7 +26,7 @@ export const TestList = () => {
 
   const handleStartTest = (id: string) => {
     selectTest(id);
-    navigate(`/tests-app/test/${id}`, { viewTransition: true });
+    navigate(`/test/${id}`, { viewTransition: true });
   };
 
   if (tests.length === 0) {
