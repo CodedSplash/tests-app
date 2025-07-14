@@ -1,0 +1,35 @@
+{
+  "title": "Основы JavaScript",
+  "questions": [
+    {
+      "question": "Какой оператор используется для сравнения значения и типа в JavaScript?",
+      "options": ["==", "===", "=", "!="],
+      "answerIndex": 1
+    },
+    {
+      "question": "Какой метод массива используется для добавления элемента в конец массива?",
+      "options": ["push()", "pop()", "shift()", "unshift()"],
+      "answerIndex": 0
+    },
+    {
+      "question": "Какой тип данных не существует в JavaScript?",
+      "options": ["undefined", "boolean", "float", "symbol"],
+      "answerIndex": 2
+    },
+    {
+      "question": "Что такое замыкание (closure) в JavaScript?",
+      "options": [
+        "Способ защиты кода от копирования",
+        "Функция, которая имеет доступ к переменным из внешней функции после того, как внешняя функция завершила выполнение",
+        "Метод для закрытия соединения с сервером",
+        "Способ объявления приватных переменных в классе"
+      ],
+      "answerIndex": 1
+    },
+    {
+      "question": "Какой метод используется для преобразования JSON строки в JavaScript объект?",
+      "options": ["JSON.parse()", "JSON.stringify()", "JSON.decode()", "JSON.encode()"],
+      "answerIndex": 0
+    }
+  ]
+}
